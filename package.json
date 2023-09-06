@@ -7,9 +7,17 @@
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build",
+    "chrome-mv2-dev": "plasmo dev --target=chrome-mv2",
+    "chrome-mv2-build": "plasmo build --target=chrome-mv2",
+    "edge-dev": "plasmo dev --target=edge-mv3",
+    "edge-build": "plasmo build --target=edge-mv3",
+    "firefox-mv2-dev":"plasmo dev --target=firefox-mv2",
+    "firefox-mv2-build":"plasmo build --target=firefox-mv2",
+    "build-all":"plasmo build && plasmo build --target=chrome-mv2 && plasmo build --target=edge-mv3 && plasmo build --target=firefox-mv2 && plasmo build --target=firefox-mv3 && plasmo build --target=opera-mv3 && plasmo build --target=brave-mv3",
     "test": "plasmo test"
   },
   "dependencies": {
+    "@plasmohq/storage": "^1.7.2",
     "plasmo": "0.82.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -20,7 +28,11 @@
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "autoprefixer": "^10.4.15",
+    "daisyui": "^3.6.5",
+    "postcss": "^8.4.29",
     "prettier": "3.0.3",
+    "tailwindcss": "^3.3.3",
     "typescript": "5.2.2"
   },
   "manifest": {
